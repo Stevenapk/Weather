@@ -16,7 +16,7 @@ public struct Weather {
     init(response: Response) {
         city = response.name
         temp = "\(Int(response.main.temp))"
-        description = response.weather.first?.description ?? ""
+        description = response.weather.first?.iconName ?? ""
         iconName = response.weather.first?.iconName ?? ""
     }
 }
