@@ -23,7 +23,6 @@ public final class WeatherService: NSObject {
         }
     }
    
-    
     public override init() {
         super.init()
         locationManager.delegate = self
