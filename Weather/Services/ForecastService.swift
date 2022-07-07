@@ -24,7 +24,7 @@ public final class ForecastService: NSObject {
         self.completionHandler = completionHandler
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-        //updates weather forecast in the case the user hasn't moved
+        //updates weather forecast in the case the user hasn't relocated
         if userCoordinates.latitude == previousCoordinates.latitude && userCoordinates.longitude == userCoordinates.longitude {
             makeDataRequest(forCoordinates: previousCoordinates)
         } else { return }
